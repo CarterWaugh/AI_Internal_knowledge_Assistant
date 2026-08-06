@@ -1,6 +1,5 @@
 # Imports
 import os
-import sys
 import llm
 from rich.console import Console
 from rich.markdown import Markdown
