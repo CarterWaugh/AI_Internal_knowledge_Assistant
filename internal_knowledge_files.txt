@@ -1,0 +1,3 @@
+employee_handbook.txt
+it_and_security_guide.txt
+project_alpha_specifications.txt
