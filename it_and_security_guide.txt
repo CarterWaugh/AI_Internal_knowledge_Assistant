@@ -1,0 +1,21 @@
+Nexus Tech Solutions - IT Setup and Security Guide
+Document ID: IT-SEC-2026-v2
+Owner: IT Infrastructure and Security Team
+Support Email: helpdesk@nexustech.internal
+
+1. NETWORK AND ACCESS
+- Office Wi-Fi:
+  * Primary Network: Nexus-Internal (Requires WPA3 Enterprise login with your LDAP credentials).
+  * Guest Network: Nexus-Visitor (Password: Innovation2026!). Guest access is bandwidth-throttled and isolated from internal servers.
+- VPN Requirement: Accessing staging servers, internal wikis, or GitHub enterprise from off-site requires an active connection to the Nexus-GlobalProtect VPN with Multi-Factor Authentication (MFA) enabled via Duo Security.
+
+2. HARDWARE ALLOCATION AND REFRESH CYCLES
+- Standard Issue Hardware:
+  * Engineering: 16-inch Apple MacBook Pro (M3/M4 Pro, 36GB RAM, 1TB SSD) or Dell XPS 15 (i9, 32GB RAM, Ubuntu Linux).
+  * Non-Engineering: 14-inch Apple MacBook Air (M3, 16GB RAM) or Lenovo ThinkPad X1 Carbon.
+- Hardware Refresh: Laptops are eligible for replacement every 3 years. Damaged equipment should be turned in to IT immediately via a Jira ticket in the IT-HELP queue.
+
+3. SECURITY PROTOCOLS AND INCIDENT REPORTING
+- Password Policy: Passwords must be a minimum of 16 characters, containing uppercase letters, lowercase letters, numbers, and special symbols. Passwords do not expire automatically unless a breach is suspected.
+- Password Manager: All employees are provided a mandatory 1Password Business account. Storing credentials in web browsers or local text files is strictly prohibited.
+- Phishing and Security Incidents: If you click a suspicious link or suspect a phishing attempt, report it immediately using the Slack command /report-phish or alert #sec-incidents on Slack.

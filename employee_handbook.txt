@@ -1,0 +1,21 @@
+Nexus Tech Solutions - Internal Employee Handbook
+Document ID: HR-DOC-2026-v4
+Last Updated: January 15, 2026
+Classification: Internal Only
+
+1. WORK MODELS AND REMOTE POLICIES
+Nexus Tech Solutions operates under a Hybrid Work Model.
+- In-Office Days: Tuesday and Thursday are mandatory in-office collaboration days for all full-time engineering and product staff.
+- Remote Days: Monday, Wednesday, and Friday are designated remote work days.
+- Core Hours: Regardless of location, all full-time employees must be reachable on Slack between 10:00 AM and 3:00 PM EST.
+
+2. PAID TIME OFF (PTO) AND LEAVE
+- Standard PTO Accrual: Full-time employees accrue 1.25 days of PTO per month (15 days annually). Employees with over 3 years of service accrue 1.66 days per month (20 days annually).
+- Sick Days: All employees receive 5 dedicated, unaccrued paid sick days at the start of each calendar year. Unused sick days do not roll over.
+- PTO Rollover: Up to 5 unused PTO days can be rolled over into the next calendar year. Any additional unused days are forfeited on December 31st.
+- Parental Leave: Primary caregivers are eligible for 12 weeks of fully paid parental leave after completing 6 consecutive months of full-time employment. Secondary caregivers receive 4 weeks of fully paid leave.
+
+3. EXPENSE AND STIPEND POLICIES
+- Home Office Stipend: New hires receive a one-time reimbursement of up to $500 to set up their home workspace. Receipts must be submitted via Expensify within 30 days of hire.
+- Learning and Development (L&D): Every employee has an annual $1,200 L&D budget for courses, books, and industry conferences. Pre-approval from your direct manager is required for purchases over $300.
+- Meal Reimbursement: On mandatory in-office days (Tuesdays/Thursdays), dinner is reimbursable up to $30 per person if an employee is required to work past 7:30 PM.

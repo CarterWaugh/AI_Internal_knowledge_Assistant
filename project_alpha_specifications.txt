@@ -1,0 +1,24 @@
+Project Alpha: Next-Gen Customer Portal
+Document ID: PRD-ALPHA-009
+Status: In Development (Target Launch: Q3 2026)
+Lead Architect: Sarah Jenkins (sjenkins@nexustech.internal)
+
+1. EXECUTIVE SUMMARY
+Project Alpha is a complete overhaul of the legacy Nexus client portal. The objective is to replace the monolith PHP app with a modern microservices architecture to improve page load speeds by 60% and support up to 50,000 concurrent active connections.
+
+2. TECHNICAL STACK
+- Frontend Framework: Next.js 14 (React, TypeScript) hosted on Vercel Enterprise.
+- Backend API Layer: Go (Golang) microservices deployed to AWS Elastic Kubernetes Service (EKS).
+- Database Layer: PostgreSQL (AWS RDS) for relational transactional data; Redis Cluster for caching and session management.
+- Search Engine: Elasticsearch 8.x for fast catalog and log searching.
+
+3. KEY MILESTONES AND TARGET DATES
+- Phase 1 (Database Migration): Completed - March 15, 2026.
+- Phase 2 (Internal Beta Testing): In Progress - Target: June 1, 2026.
+- Phase 3 (Security Audit and Penetration Test): Scheduled - Target: July 15, 2026.
+- Phase 4 (Public Production Release): Scheduled - Target: September 1, 2026.
+
+4. ENVIRONMENT URLS AND CREDENTIALS ACCESS
+- Development Environment: https://dev-alpha.nexustech.internal
+- Staging Environment: https://staging-alpha.nexustech.internal
+- Credential Request: API keys and staging credentials must be requested through HashiCorp Vault. Do NOT post keys in #project-alpha Slack channels.
