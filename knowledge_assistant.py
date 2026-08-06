@@ -45,23 +45,29 @@ def load_knowledge_base(manifest_file_path):
 
 def build_system_prompt(loaded_documents):
     """
-    Combines loaded document contents into a structured context block and
-    returns a detailed system prompt for the AI Assistant.
+    Combines loaded document contents into a structured context block with line numbers
+    and returns a detailed system prompt instructing the AI Assistant to cite source filenames
+    and starting line numbers.
     """
     formatted_knowledge_context = ""
     for document_name, document_text in loaded_documents.items():
-        formatted_knowledge_context += f"\n--- DOCUMENT: {document_name} ---\n{document_text}\n"
+        document_lines = document_text.splitlines()
+        line_numbered_text = "\n".join(
+            f"[Line {line_number + 1}] {line_content}"
+            for line_number, line_content in enumerate(document_lines)
+        )
+        formatted_knowledge_context += f"\n--- DOCUMENT: {document_name} ---\n{line_numbered_text}\n"
 
     constructed_system_prompt = f"""You are the Nexus Tech Solutions Internal AI Knowledge Assistant.
 Your mission is to help employees by providing accurate, helpful, and concise answers based strictly on the internal documents provided below.
 
-Guidelines:
-1. Always base your answers on the provided internal documentation.
-2. If a user's question cannot be answered using the provided documents, state clearly that the information is not covered in the internal knowledge base.
-3. Use clear formatting (bullet points, bold text, code blocks) to make your responses readable.
-4. Reference the document name (e.g., Employee Handbook, IT Setup and Security Guide, Project Alpha Specifications) when relevant.
+Guidelines & Source Citation Rules:
+1. Always base your answers strictly on the provided internal documentation.
+2. MANDATORY CITATION: For every piece of information, policy, or answer you provide, you MUST specify the source document filename and the starting line number where the information is located in the text (e.g., `[Source: employee_handbook.txt, Line 8]` or `(it_and_security_guide.txt, Line 15)`).
+3. If a user's question cannot be answered using the provided documents, state clearly that the information is not covered in the internal knowledge base.
+4. Use clear formatting (bullet points, bold text, code blocks) to make your responses clean and easy to read.
 
-INTERNAL KNOWLEDGE BASE:
+INTERNAL KNOWLEDGE BASE (Line-Numbered):
 {formatted_knowledge_context}
 """
     return constructed_system_prompt
